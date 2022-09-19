@@ -79,11 +79,12 @@ export const Container = styled.div`
   }
   hr{
     width:800px;
-    // background-color:var(--mainBlue);
     outline:0;
-    // border-color:transparent;
     border:1px solid var(--mainBlue);
     margin-top:30px;
+    @media(max-width:1336px){
+      width:80%;
+    }
   }
   
 `;
@@ -142,6 +143,9 @@ const StyledLink = styled(Link)`
     font-weight: bold;
     letter-spacing: -0.4px;
     border-radius: 5px;
+    @media(max-width:576px){
+      width:150px;
+    }
   }
 `;
 
